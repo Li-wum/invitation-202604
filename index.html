@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f8f5ef">
+  <title>飛鴻教育｜邀請函</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <p class="eyebrow">AN INVITATION FOR YOU</p>
+    <div class="scene" id="scene">
+      <button class="envelope" id="envelope" type="button" aria-label="點擊開啟邀請函" aria-expanded="false">
+        <img class="layer back" src="assets/back.svg" alt="" draggable="false">
+        <div class="letter-slot"><img class="letter" src="assets/invitation.svg" alt="" draggable="false"></div>
+        <img class="layer front" src="assets/front.svg" alt="" draggable="false">
+        <div class="flap-wrap"><img class="layer flap" src="assets/flap.svg" alt="" draggable="false"><img class="layer seal" src="assets/seal.svg" alt="" draggable="false"></div>
+      </button>
+    </div>
+    <p class="hint" id="hint">點擊信封，開啟邀請函</p>
+  </main>
+  <div class="viewer" id="viewer" role="dialog" aria-modal="true" aria-label="完整邀請函" aria-hidden="true">
+    <button class="close" id="close" type="button" aria-label="關閉邀請函">✕ <span>關閉</span></button>
+    <img class="full-invitation" src="assets/invitation.svg" alt="飛鴻教育邀請函">
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
